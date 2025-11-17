@@ -1,46 +1,41 @@
-/* Global reset-ish */
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  padding: 16px;
-  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-  background: radial-gradient(circle at top, #1f2937, #020617);
-  color: #f9fafb;
+  padding: 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f0f4f8;
+  color: #1f2937;
 }
 
-/* Header & footer */
 
 .site-header,
 .site-footer {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .site-header h1 {
   margin: 0;
   font-size: 2.4rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #e5e7eb;
+  color: #0f172a;
 }
 
 .site-header p {
-  margin: 8px auto 0;
-  max-width: 600px;
-  color: #9ca3af;
-  font-size: 0.98rem;
+  margin-top: 6px;
+  color: #475569;
+  font-size: 1rem;
 }
 
 .site-footer p {
-  margin-top: 32px;
-  font-size: 0.85rem;
-  color: #6b7280;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #64748b;
 }
 
-/* Card grid (Flexbox container) */
 
 .card-grid {
   display: flex;
@@ -49,39 +44,39 @@ body {
   gap: 24px;
 }
 
-/* Individual cards */
 
 .card {
-  background: #020617;
-  border-radius: 18px;
+  background: white;
+  border-radius: 16px;
   border: 2px solid #38bdf8;
   padding: 16px;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   gap: 8px;
-  /* Mobile: full-width stack */
+
+
   flex: 1 1 100%;
   max-width: 420px;
 }
 
 .card img {
   width: 100%;
-  height: 190px;
+  height: 180px;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: 12px;
   border: 1px solid #0ea5e9;
 }
 
 .card h2 {
-  margin: 10px 0 2px;
+  margin: 10px 0 4px;
   font-size: 1.4rem;
-  color: #e0f2fe;
+  color: #0c4a6e;
 }
 
 .card-details {
   margin: 0;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #38bdf8;
@@ -89,15 +84,14 @@ body {
 
 .card-description {
   margin: 4px 0 0;
-  font-size: 0.98rem;
   line-height: 1.6;
-  color: #e5e7eb;
+  color: #334155;
+  font-size: 0.98rem;
 }
 
-/* Tablet: 2 columns */
 @media (width >= 600px) and (width < 900px) {
   body {
-    padding: 24px;
+    padding: 30px;
   }
 
   .card {
@@ -106,10 +100,9 @@ body {
   }
 }
 
-/* Desktop: 3 columns */
 @media (width >= 900px) {
   body {
-    padding: 32px 56px;
+    padding: 40px 60px;
   }
 
   .card {
